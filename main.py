@@ -1,8 +1,4 @@
-# Remove the corrupted file
-rm main. py
 
-# Create a fresh, clean main.py
-cat > main.py << 'ENDOFFILE'
 #!/usr/bin/env python3
 """
 Auto Commit Generator
