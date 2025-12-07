@@ -1,7 +1,6 @@
-
 MIT License
 
-Copyright (c) 2025
+Copyright (c) 2025 Auto Commit Generator Contributors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -11,7 +10,7 @@ copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software. 
+copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -19,5 +18,23 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-ENDOFFILE
+SOFTWARE. 
+
+---
+
+EDUCATIONAL USE DISCLAIMER:
+
+This software is provided strictly for educational purposes.  The authors and
+contributors do not endorse or encourage the use of this software to:
+
+1. Artificially inflate GitHub contribution graphs
+2. Misrepresent actual work or contributions
+3. Deceive employers, recruiters, or collaborators
+4. Violate GitHub's Terms of Service
+5. Engage in any form of academic or professional dishonesty
+
+Users are solely responsible for how they use this software and must ensure
+their usage complies with all applicable terms of service, laws, and ethical
+guidelines. 
+
+The authors assume no liability for misuse of this software. 
