@@ -1,8 +1,7 @@
-
 #!/usr/bin/env python3
 """
 Auto Commit Generator
-A minimal script that automatically creates and pushes Git commits. 
+A minimal script that automatically creates and pushes Git commits.  
 
 EDUCATIONAL USE ONLY - Do not use to artificially inflate contribution graphs.
 """
@@ -38,7 +37,7 @@ def check_git_config():
     if not name_result or not email_result:
         print("\n⚠️  Please configure Git:")
         print('   git config user.name "Your Name"')
-        print('   git config user.email "your. email@example.com"')
+        print('   git config user.email "your.email@example.com"')
         return False
     
     print(f"✓ Git user: {name_result.stdout.strip()}")
@@ -71,7 +70,7 @@ def create_commit():
     """Create and push an automated commit."""
     print("\n📝 Creating auto-commit...")
     
-    timestamp = datetime. now().strftime("%Y-%m-%d %H:%M:%S")
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     commit_file = Path("commits.txt")
     
     try:
@@ -129,4 +128,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-ENDOFFILE
