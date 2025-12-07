@@ -1,4 +1,4 @@
-cat > requirements.txt << 'ENDOFFILE'
+
 # No external dependencies required
 # This project uses only Python built-in modules:
 # - subprocess
