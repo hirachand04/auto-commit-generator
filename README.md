@@ -1,4 +1,4 @@
-cat > README. md << 'ENDOFFILE'
+
 # Auto Commit Generator 🤖
 
 A minimal Python project that automatically generates Git commits.  **For educational purposes only.**
