@@ -1,4 +1,8 @@
+# Remove the corrupted file
+rm main. py
 
+# Create a fresh, clean main.py
+cat > main.py << 'ENDOFFILE'
 #!/usr/bin/env python3
 """
 Auto Commit Generator
@@ -32,13 +36,13 @@ def check_git_config():
     """Verify that Git user name and email are configured."""
     print("🔍 Checking Git configuration...")
     
-    name_result = run_command(["git", "config", "user. name"], "Git user. name not configured")
+    name_result = run_command(["git", "config", "user.name"], "Git user. name not configured")
     email_result = run_command(["git", "config", "user.email"], "Git user.email not configured")
     
     if not name_result or not email_result:
         print("\n⚠️  Please configure Git:")
         print('   git config user.name "Your Name"')
-        print('   git config user.email "your.email@example.com"')
+        print('   git config user.email "your. email@example.com"')
         return False
     
     print(f"✓ Git user: {name_result.stdout.strip()}")
@@ -63,7 +67,7 @@ def check_git_repo():
         print("   git remote add origin <your-repo-url>")
         return False
     
-    print(f"✓ Remote: {remote_result.stdout. strip()}")
+    print(f"✓ Remote: {remote_result.stdout.strip()}")
     return True
 
 
@@ -71,7 +75,7 @@ def create_commit():
     """Create and push an automated commit."""
     print("\n📝 Creating auto-commit...")
     
-    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    timestamp = datetime. now().strftime("%Y-%m-%d %H:%M:%S")
     commit_file = Path("commits.txt")
     
     try:
@@ -93,10 +97,10 @@ def create_commit():
     
     print("\n⬆️  Pushing to remote...")
     if not run_command(["git", "push", "origin", "HEAD"], "Failed to push to remote"):
-        print("\n⚠️  Push failed.  Common solutions:")
-        print("   1. Set up SSH keys or personal access token")
-        print("   2. Pull latest changes: git pull origin main")
-        print("   3. Check repository permissions")
+        print("\n⚠️  Push failed. Common solutions:")
+        print("   1.  Set up SSH keys or personal access token")
+        print("   2.  Pull latest changes: git pull origin main")
+        print("   3.  Check repository permissions")
         return False
     
     print("✓ Successfully pushed to remote!")
@@ -118,13 +122,13 @@ def main():
     
     if create_commit():
         print("\n" + "=" * 50)
-        print("  ✅ Success!  Commit created and pushed.")
+        print("  ✅ Success! Commit created and pushed.")
         print("=" * 50)
     else:
         print("\n" + "=" * 50)
         print("  ❌ Failed to complete auto-commit.")
         print("=" * 50)
-        sys.exit(1)
+        sys. exit(1)
 
 
 if __name__ == "__main__":
