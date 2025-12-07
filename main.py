@@ -1,4 +1,4 @@
-cat > main. py << 'ENDOFFILE'
+
 #!/usr/bin/env python3
 """
 Auto Commit Generator
